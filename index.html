@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+        <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    </head>
+  <body>
+    <nav class="navbarr">
+<div class="navbar-containerr">
+<h5 class="phone">
+    <img src="/assets/call icon.png" width="17"/>
+    +23470848499
+</h5>
+<div class="get">
+<h5>
+    Get 50% off on Selected Items
+</h5>
+|
+<h5 class="" style="color: #FBBC05;">
+   Shop Now
+</h5>
+</div>
+
+<div style="display: flex; gap: 16px;">
+<h5 class="phone">
+    EN
+   <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+  </svg>
+  
+</h5>
+<h5 class="phone">
+    <img src="/assets/twemoji_flag-nigeria.png" width="17"/>
+   Nigeria
+   <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+  </svg>
+  
+</h5>
+</div>
+
+
+</div>
+    </nav>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="menu-button-container">
+                <div style="display: flex ; justify-content: space-between;">
+
+              
+                <img src="/assets/M image.png" style="width: 50px; height: 50px;" />
+
+                <button
+                    onclick="toggleMenu()"
+                    class="menu-button"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                >
+                    <!-- <span class="sr-only">Open main menu</span> -->
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1db459" d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z" /></svg>
+                </button>
+            </div>
+            </div>
+    
+            <div class="navbar-links" id="navbar-sticky">
+                <div class="nav-items">
+                    <img src="/assets/M image.png" style="width: 50px; height: 50px;" />
+                    <a href="/" class="nav-link">Fruits</a>
+    
+                  
+    
+                    <a href="/blog" class="nav-link">Vegetables</a>
+                    <a href="/about-us" class="nav-link">Grains</a>
+                    
+                </div>
+
+                <div class="search">
+                    <div class="search-container">
+                        <button class="search-button">
+                            <img src="/assets/search icon.png" alt="Search" class="search-icon" />
+                        </button> <input type="text" class="search-input" placeholder="Search..." />
+                       
+                    </div>
+                    <img src="/assets/heart.png" style="width: 30px; height: 30px;" />
+                    <img src="/assets/shop icon.png" style="width: 30px; height: 30px;" />
+
+                </div>
+    
+                <div class="auth-buttons">
+                    <!-- <div class="user-info">
+                        <a href="/dashboard" class="user-link">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.5" r="19.5" fill="#D9D9D9" />
+                                <path d="M19 17C21.2091 17 23 15.2091 23 13C23 10.7909 21.2091 9 19 9C16.7909 9 15 10.7909 15 13C15 15.2091 16.7909 17 19 17Z" fill="black" />
+                                <path d="M27 24.5C27 26.985 27 29 19 29C11 29 11 26.985 11 24.5C11 22.015 14.582 20 19 20C23.418 20 27 22.015 27 24.5Z" fill="black" />
+                            </svg>
+                            <span class="user-name">User</span>
+                        </a>
+                        <button onclick="logOut()" class="logout-button">Logout</button>
+                    </div> -->
+                    <div class="login-register">
+                        <a href="/sign-in" class="login-button">Login</a>
+                        <a href="/terms" class="register-button">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-nav-items">
+                <a href="/" class="mobile-nav-link" onclick="toggleMenu()">Fruits</a>
+                <hr class="separator"/>
+    
+                <!-- <div class="mobile-dropdown">
+                    <div class="mobile-dropdown-toggle" onclick="toggleDropdown()">
+                        <span>Programs</span>
+                        <span class="dropdown-icon">
+                            <svg id="mobile-dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m16.9 13.4l-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5l3.5 3.5c.2.2.4.3.7.3c.3 0 .5-.1.7-.3c.4-.4.4-1 0-1.4z" /></svg>
+                        </span>
+                    </div>
+                    <div class="mobile-dropdown-menu">
+                        <a href="/study-in-finnish" class="mobile-dropdown-item" onclick="toggleMenu()">Learn in Finnish (No Tuition Fees Paid)</a>
+                        <a href="/study-in-english" class="mobile-dropdown-item" onclick="toggleMenu()">Learn in English (Tuition Fees Paid)</a>
+                    </div>
+                </div> -->
+                <!-- <hr class="separator"/> -->
+    
+                <a href="/blog" class="mobile-nav-link" onclick="toggleMenu()">Vegetables</a>
+                <hr class="separator"/>
+    
+                <a href="/about-us" class="mobile-nav-link" onclick="toggleMenu()">Grains</a>
+                <hr class="separator"/>
+    
+           
+                <div class="mobile-auth-buttons">
+                    <!-- <a href="/dashboard" class="mobile-user-link" onclick="toggleMenu()">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19.5" cy="19.5" r="19.5" fill="#D9D9D9" />
+                            <path d="M19 17C21.2091 17 23 15.2091 23 13C23 10.7909 21.2091 9 19 9C16.7909 9 15 10.7909 15 13C15 15.2091 16.7909 17 19 17Z" fill="black" />
+                            <path d="M27 24.5C27 26.985 27 29 19 29C11 29 11 26.985 11 24.5C11 22.015 14.582 20 19 20C23.418 20 27 22.015 27 24.5Z" fill="black" />
+                        </svg>
+                        <span class="mobile-user-name">User</span>
+                    </a>
+                    <button onclick="logOut()" class="mobile-logout-button">Logout</button>
+     -->
+                    <div class="mobile-login-register">
+                        <a href="/sign-in" class="mobile-login-button" onclick="toggleMenu()">Login</a>
+                        <a href="/terms" class="mobile-register-button" onclick="toggleMenu()">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="relative-container">
+        <div class="image-container">
+            <img src="/assets/bg.jpeg" alt="" class="background-image" />
+            <div class="content-container">
+                <div class="summer">
+                   <h4 class="end"> ENDLESS SUMMER SALE</h4>
+                </div>
+                <div class="text-content">
+                    <h4 class="welcome-text">Up to <b>20% off</b> on all items till <b>September 11</b></h4>
+                    <!-- <div class="underline"></div> -->
+                </div>
+
+                <button class="shop">
+                    <h4>Shop now</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="15" style="color: white;" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </button>
+
+                
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </div>
+    </div>
+    
+    
+  </body>
+</html>
