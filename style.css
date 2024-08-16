@@ -832,10 +832,12 @@ button:hover {
 .experiences {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 90px;
+  gap: 16px;
+  margin-top: 8px;
 }
-
+.experiences p {
+  font-size: 16px;
+}
 #img-background {
   background-color: #e7f4ed;
   border-radius: 50%;
@@ -855,6 +857,6 @@ button:hover {
   width: 300px;
 }
 
-.experiences .child1 h3 {
+.experiences .child1 h5 {
   margin-bottom: 4px;
 }
