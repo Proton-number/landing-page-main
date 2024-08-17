@@ -1,147 +1,198 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Landing page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <title>Landing page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <nav class="navbarr">
-        <div class="navbar-containerr">
-            <h5 class="phone">
-                <img src="assets/call icon.png" width="17" />
-                +234708484996
-            </h5>
-            <div class="get">
-                <h5>
-                    Get 50% off on Selected Items
+    <body>
+        <nav class="navbarr">
+            <div class="navbar-containerr">
+                <h5 class="phone">
+                    <img src="assets/call icon.png" width="17" />
+                    +234708484996
                 </h5>
-                |
-                <h5 class="" style="color: #FBBC05;">
-                    Shop Now 
-                </h5>
+                <div class="get">
+                    <h5>
+                        Get 50% off on Selected Items
+                    </h5>
+                    |
+                    <h5 class="" style="color: #FBBC05;">
+                        Shop Now
+                    </h5>
+                </div>
+
+                <div style="display: flex; gap: 16px;">
+                    <h5 class="phone">
+                        EN
+                        <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </h5>
+                    <h5 class="phone">
+                        <img src="assets/twemoji_flag-nigeria.png" width="17" />
+                        Nigeria
+                        <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </h5>
+                </div>
+
+
+            </div>
+        </nav>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="menu-button-container">
+                    <div style="display: flex ; justify-content: space-between;">
+
+
+                        <img src="assets/M image.png" style="width: 50px; height: 50px;" />
+
+                        <button class="menu-button" aria-controls="mobile-menu" aria-expanded="false">
+
+                            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="#1db459"
+                                    d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="navbar-links" id="navbar-sticky">
+                    <div class="nav-items">
+                        <img src="assets/M image.png" style="width: 50px; height: 50px;" />
+                        <a href="/" class="nav-link">Fruits</a>
+
+
+
+                        <a href="/" class="nav-link">Vegetables</a>
+                        <a href="/" class="nav-link">Grains</a>
+
+                    </div>
+
+                    <div class="search">
+                        <div class="search-container">
+                            <button class="search-button">
+                                <img src="assets/search icon.png" alt="Search" class="search-icon" />
+                            </button> <input type="text" class="search-input" placeholder="Search here..." />
+
+                        </div>
+                        <img src="assets/heart.png" style="width: 30px; height: 30px;" />
+                        <img src="assets/shop icon.png" style="width: 30px; height: 30px;" />
+
+                    </div>
+
+                    <div class="auth-buttons">
+
+                        <div class="login-register">
+                            <a href="/" class="login-button">Login</a>
+                            <a href="/" class="register-button">Sign up</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div style="display: flex; gap: 16px;">
-                <h5 class="phone">
-                    EN
-                    <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-nav-items">
+                    <a href="/" class="mobile-nav-link">Fruits</a>
+                    <hr class="separator" />
 
-                </h5>
-                <h5 class="phone">
-                    <img src="assets/twemoji_flag-nigeria.png" width="17" />
-                    Nigeria
-                    <svg width="15" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
 
-                </h5>
+
+                    <a href="/" class="mobile-nav-link">Vegetables</a>
+                    <hr class="separator" />
+
+                    <a href="/" class="mobile-nav-link">Grains</a>
+                    <hr class="separator" />
+
+
+                    <div class="mobile-auth-buttons">
+
+                        <div class="mobile-login-register">
+                            <a href="/" class="mobile-login-button">Login</a>
+                            <a href="/" class="mobile-register-button">Sign up</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </nav>
 
 
-        </div>
-    </nav>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="menu-button-container">
-                <div style="display: flex ; justify-content: space-between;">
 
+        <div class="relative-container">
+            <div class="image-container">
+                <img src="assets/bg.jpeg" alt="" class="background-image" />
+                <div class="content-container">
+                    <div class="summer">
+                        <h4 class="end"> ENDLESS SUMMER SALE</h4>
+                    </div>
+                    <div class="text-content">
+                        <h4 class="welcome-text">Up to <b>20% off</b> on all items till <b>September 11</b></h4>
 
-                    <img src="assets/M image.png" style="width: 50px; height: 50px;" />
+                    </div>
 
-                    <button class="menu-button" aria-controls="mobile-menu" aria-expanded="false">
-
-                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path fill="#1db459"
-                                d="M4 18q-.425 0-.713-.288T3 17q0-.425.288-.713T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18H4Zm0-5q-.425 0-.713-.288T3 12q0-.425.288-.713T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13H4Zm0-5q-.425 0-.713-.288T3 7q0-.425.288-.713T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8H4Z" />
+                    <button class="shop">
+                        <h4>Shop now</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            width="15" style="color: white;" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
                 </div>
-            </div>
 
-            <div class="navbar-links" id="navbar-sticky">
-                <div class="nav-items">
-                    <img src="assets/M image.png" style="width: 50px; height: 50px;" />
-                    <a href="/" class="nav-link">Fruits</a>
-
-
-
-                    <a href="/" class="nav-link">Vegetables</a>
-                    <a href="/" class="nav-link">Grains</a>
-
-                </div>
-
-                <div class="search">
-                    <div class="search-container">
-                        <button class="search-button">
-                            <img src="assets/search icon.png" alt="Search" class="search-icon" />
-                        </button> <input type="text" class="search-input" placeholder="Search here..." />
-
-                    </div>
-                    <img src="assets/heart.png" style="width: 30px; height: 30px;" />
-                    <img src="assets/shop icon.png" style="width: 30px; height: 30px;" />
-
-                </div>
-
-                <div class="auth-buttons">
-
-                    <div class="login-register">
-                        <a href="/" class="login-button">Login</a>
-                        <a href="/" class="register-button">Sign up</a>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="mobile-menu" id="mobile-menu">
-            <div class="mobile-nav-items">
-                <a href="/" class="mobile-nav-link">Fruits</a>
-                <hr class="separator" />
-
-
-
-                <a href="/" class="mobile-nav-link">Vegetables</a>
-                <hr class="separator" />
-
-                <a href="/" class="mobile-nav-link">Grains</a>
-                <hr class="separator" />
-
-
-                <div class="mobile-auth-buttons">
-
-                    <div class="mobile-login-register">
-                        <a href="/" class="mobile-login-button">Login</a>
-                        <a href="/" class="mobile-register-button">Sign up</a>
-                    </div>
+        <div class="navbar">
+            <div>
+                <div class="nav-itemss">
+                    <p class="nav">Brands</p>
                 </div>
             </div>
+
+            <div class="navv">
+                <img src="assets/brand.jpg" alt="navv" class="sport">
+            </div>
         </div>
-    </nav>
 
 
 
-    <div class="relative-container">
-        <div class="image-container">
-            <img src="assets/bg.jpeg" alt="" class="background-image" />
-            <div class="content-container">
-                <div class="summer">
-                    <h4 class="end"> ENDLESS SUMMER SALE</h4>
+        <div class="dave">
+            <div class="dufflee">
+                <p class="duffleee">Categories</p>
+            </div>
+
+            <div class="lust">
+                <p class="lustt">View all</p>
+                <img src="assets/icon.png" alt="icon" class="icon">
+            </div>
+        </div>
+
+        <div class="imagecontainer10">
+
+            <img src="assets/Frame 1000007411.png" alt="" class="backgroundimage2" />
+            <div class="firstframe ">
+                <div>
+                    <h5 class="frames">Fast Selling</h5>
                 </div>
-                <div class="text-content">
-                    <h4 class="welcome-text">Up to <b>20% off</b> on all items till <b>September 11</b></h4>
+                <div class="textone">
+                    <h4 class="welcometext">Fresh Vegetables<h5 class="partthree"> Ranging from Efo, Ewedu, Gbure,
+                            Carrots...e.t.c </h5>
+                    </h4>
 
                 </div>
 
-                <button class="shop">
+                <button class="shopp">
                     <h4>Shop now</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         width="15" style="color: white;" stroke="currentColor" class="size-6">
@@ -149,137 +200,148 @@
                     </svg>
                 </button>
             </div>
+            <div class="john">
 
-        </div>
-    </div>
+                <div class="joy">
 
-    <div class="navbar">
-        <div>
-            <div class="nav-itemss">
-                <p class="nav">Brands</p>
-            </div>
-        </div>
+                    <img src="assets/Frame 1000007412.png" alt="" class="backwood" />
+                    <div class="secondframe">
+                        <div>
+                            <h5 class="goodframes">Grains <h5 class="partthree"> Ranging from Efo, Ewedu, Gbure,
+                                    Carrots...e.t.c </h5>
+                        </div>
 
-        <div class="navv">
-            <img src="assets/brand.jpg" alt="navv" class="sport">
-        </div>
-    </div>
-
-
-
-    <div class="dave">
-        <div class="dufflee">
-            <p class="duffleee">Categoriesd</p>
-        </div>
-
-        <div class="lust">
-            <p class="lustt">View all</p>
-            <img src="assets/icon.png" alt="icon" class="icon">
-        </div>
-    </div>
-
-    <div class="imagecontainer10">
-
-        <img src="assets/Frame 1000007411.png" alt="" class="backgroundimage2" />
-        <div class="firstframe ">
-            <div>
-                <h5 class="frames">Fast Selling</h5>
-            </div>
-            <div class="textone">
-                <h4 class="welcometext">Fresh Vegetables<h5 class="partthree"> Ranging from Efo, Ewedu, Gbure,
-                        Carrots...e.t.c </h5>
-                </h4>
-
-            </div>
-
-            <button class="shopp">
-                <h4>Shop now</h4>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="15"
-                    style="color: white;" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
-        </div>
-        <div class="john">
-
-            <div class="joy">
-
-                <img src="assets/Frame 1000007412.png" alt="" class="backwood" />
-                <div class="secondframe">
-                    <div>
-                        <h5 class="goodframes">Grains <h5 class="partthree"> Ranging from Efo, Ewedu, Gbure,
-                                Carrots...e.t.c </h5>
+                        <button class="shopp">
+                            <h4>Shop now</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                width="15" style="color: white;" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
                     </div>
 
-                    <button class="shopp">
-                        <h4>Shop now</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            width="15" style="color: white;" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-                </div>
-
-               <div class="fresh-fruit">
-                <img src="assets/Frame 1000007414.png" alt="" class="arizona" />
-                <div class="thirdframe">
-                    <div>
-                        <h5 class="greatframes">Fresh Fruits <h5 class="partfour"> Ranging from Efo, Ewedu, Gbure,
-                                Carrots...e.t.c </h5>
+                    <div class="fresh-fruit">
+                        <img src="assets/Frame 1000007414.png" alt="" class="arizona" />
+                        <div class="thirdframe">
+                            <div>
+                                <h5 class="greatframes">Fresh Fruits <h5 class="partfour"> Ranging from Efo, Ewedu,
+                                        Gbure,
+                                        Carrots...e.t.c </h5>
+                            </div>
+                            <button class="shopp">
+                                <h4>Shop now</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" width="15" style="color: white;" stroke="currentColor"
+                                    class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <button class="shopp">
-                        <h4>Shop now</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            width="15" style="color: white;" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
-               </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="dav">
-        <div class="duff">
-            <p class="duffleeeR">We provide <p> the best customer experiences</p>
-            <div class="experiences">
-<div class="child1">
-    <div id="img-background">
-        <img src="assets/shop icon.png" alt="shop icon">
-    </div>
-    <h5>Fresh Products</h5>
-    <p>We ensure money-back guarantee if the product is counterfeit</p>
-</div>
-<div class="child1">
-    <div id="img-background">
-        <img src="assets/emoji icon.png" alt="emoji icon">
-    </div>
-    <h5>Satisfaction Guarantee</h5>
-    <p>We ensure money-back guarantee if the product is counterfeit</p>
-</div>
-<div class="child1">
-    <div id="img-background">
-        <img src="assets/arrival icon.png" alt="emoji icon">
-    </div>
-    <h5>New Arrival Everyday</h5>
-    <p>We ensure money-back guarantee if the product is counterfeit</p>
-</div>
+        <div class="dave">
+            <div class="duff">
+                <p class="duffleeeR">We provide
+                <p> the best customer experiences</p>
+                <div class="experiences">
+                    <div class="child1">
+                        <div id="img-background">
+                            <img src="assets/shop icon.png" alt="shop icon">
+                        </div>
+                        <h5>Fresh Products</h5>
+                        <p>We ensure money-back guarantee if the product is counterfeit</p>
+                    </div>
+                    <div class="child1">
+                        <div id="img-background">
+                            <img src="assets/emoji icon.png" alt="emoji icon">
+                        </div>
+                        <h5>Satisfaction Guarantee</h5>
+                        <p>We ensure money-back guarantee if the product is counterfeit</p>
+                    </div>
+                    <div class="child1">
+                        <div id="img-background">
+                            <img src="assets/arrival icon.png" alt="emoji icon">
+                        </div>
+                        <h5>New Arrival Everyday</h5>
+                        <p>We ensure money-back guarantee if the product is counterfeit</p>
+                    </div>
 
-<div class="child1">
-    <div id="img-background">
-    <img src="assets/ship icon.png" alt="">
-</div>
-    <h5>Fast & Free Shipping</h4>
-    <p>We ensure money-back guarantee if the product is counterfeit</p>
-</div>
+                    <div class="child1">
+                        <div id="img-background">
+                            <img src="assets/ship icon.png" alt="">
+                        </div>
+                        <h5>Fast & Free Shipping</h4>
+                            <p>We ensure money-back guarantee if the product is counterfeit</p>
+                    </div>
 
-    </div>
-    <!-- end of experiences -->
+                </div>
+                <!-- end of experiences -->
+
+
+            </div>
 
         </div>
 
-</body>
+        <div class="imagecontainer2">
+
+            <img src="assets/crops.jpg" alt="" class="backgroundimage2" style="border-radius: 20px;" />
+            <div class="firstframe2 ">
+                <div class="frame2">
+                    <div class="frame2div">
+                        <h5>UP TO 80% OFF</h5>
+                    </div>
+                </div>
+                <div class="textone">
+                    <h6 class="welcometext2">Shops from popular Collection
+                    </h6>
+
+                </div>
+
+                <button class="shopp2">
+                    <h4>Shop now</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        width="15" style="color: white;" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="john">
+
+                <div class="joy">
+                    <img src="assets/tomato.jpg" alt="" class="backwood" style="border-radius: 20px;" />
+                    <div class="secondframe">
+                        <div class="off1">
+                            <h5>UP TO 20% OFF</h5>
+                        </div>
+                        <div>
+                            <h5 class="goodframes">Fresh Tomatoes from the farm </h5>
+                        </div>
+
+                    </div>
+
+                    <div class="fresh-fruit">
+                        <img src="assets/woman.jpg" alt="" class="arizona" style="border-radius: 20px;" />
+                        <div class="thirdframe">
+                            <div class="off2" >
+                                <h5>UP TO 20% OFF</h5>
+                            </div>
+                            <div>
+                                <h5 class="goodframes">Fresh Tomatoes from the farm </h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
 
 </html>
