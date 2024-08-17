@@ -641,6 +641,7 @@ body {
   top:260px;
   left: -25%;
 }
+
 .content-container10 {
   max-width: 1280px;
   /* Similar to max-w-screen-xl */
@@ -936,4 +937,76 @@ button:hover {
 
 .experiences .child1 h5 {
   margin-bottom: 4px;
+}
+
+.popular{
+  color: black;
+  margin-left: 150px;
+  margin-top: 40px;
+  font-weight: 500;
+ margin-bottom: 50px;
+}
+
+.popular h3{
+ font-size: 28px;
+ margin-bottom: 8px;
+}
+.product{
+  display: flex;
+  gap: 90px;
+}
+.product  img{
+  height: 250px;
+  width: 240px;
+   margin-bottom: 8px;
+}
+.about-product{
+  display: flex;
+  gap: 70px;
+}
+
+.deliveries{
+    color: rgb(255, 255, 255);
+  margin-left: 150px;
+  margin-top: 40px;
+  font-weight: 600;
+ margin-bottom: 50px;
+ background: rgb(47,150,94);
+background: linear-gradient(143deg, rgba(47,150,94,1) 0%, rgba(24,210,94,1) 44%);
+padding: 30px;
+width: 78%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+
+.deliveries-btn{
+   display: flex;
+  text-decoration: none;
+  color: white;
+  background-color: #2f945c;
+  padding: 14px 16px;
+  width: fit-content;
+  border: 1px solid #2f945c;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400 bold;
+  /* margin-left: 20px; */
+}
+
+.together{
+    color: black;
+  margin-left: 150px;
+  margin-top: 40px;
+ margin-bottom: 50px;
+}
+
+.footer{
+    color: black;
+  margin-left: 150px;
+  margin-top: 40px;
+ margin-bottom: 50px;
 }
