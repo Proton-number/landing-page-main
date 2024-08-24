@@ -50,7 +50,8 @@ body {
 }
 
 .menu-button-container {
-  display: none;
+  display: block;
+  margin: auto;
 }
 
 .menu-button {
@@ -60,10 +61,10 @@ body {
 }
 
 .navbar-links {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
+  
 }
 
 .nav-items {
@@ -324,11 +325,11 @@ body {
   }
 
   .menu-button-container {
-    display: block;
+    display: none;
   }
 
   .navbar-links {
-    display: none;
+    display: block;
   }
 
   .navbar-links.active {
@@ -1027,8 +1028,8 @@ margin: auto;
     gap: 220px;
   }
    .background-image{
-    width: 320px;
-  height: 320px;
+    width: 350px;
+  height: 200%;
     border-radius: 12px;
   }
   
@@ -1169,6 +1170,13 @@ width: 100%;
 #logo{
   width: 40px;
 }
+.navbar-links{
+  display: none;
+}
+.menu-button-container {
+  display: block;
+  margin: auto;
+}
 }
 
 
@@ -1179,8 +1187,8 @@ width: 100%;
     gap: 300px;
   }
   .background-image{
-    width: 92%;
-  height: 900px;
+    width: 1000px;
+  height: 1600px;
     border-radius: 8px;
   }
  
@@ -1194,7 +1202,11 @@ width: 100%;
     gap: 400px;
   }
 
-    
+      .background-image{
+    width: 950px;
+  height: 1300px;
+    border-radius: 8px;
+  }
 .content-container {
   height: 48%;
 }
@@ -1271,8 +1283,8 @@ width: 100%;
     gap: 450px;
   }
      .background-image{
-    width: 98%;
-  height: 830px;
+    width: 95%;
+  height: 630px;
   }
     
 .content-container {
@@ -1336,4 +1348,13 @@ width: 100%;
   display: flex;
   gap: 180px
 }
+.menu-button-container {
+  display: none;
+  margin: auto;
+}
+.navbar-links{
+  display: flex; 
+  /* visibility: visible; */
+}
+
 }
