@@ -974,11 +974,9 @@ button:hover {
    margin-bottom: 8px;
 }
 
-.deliveries{
-  padding: 20px;
-  width: 100%;
-}
-.deliveries div{
+
+.deliveries {
+  width: 96%;
     color: rgb(255, 255, 255);
   margin-top: 40px;
   font-weight: 600;
@@ -1153,13 +1151,13 @@ width: 226px;
   width: 200px;
 }
 
-.deliveries h1{
+ .deliveries h1{
 font-size: 20px;
 width: 100%;
 }
 .deliveries img{
-width: 100%;
-}
+width: 100px;
+} 
 
 .footer img{
   width: 130px;
@@ -1187,8 +1185,8 @@ width: 100%;
     gap: 300px;
   }
   .background-image{
-    width: 1000px;
-  height: 1600px;
+    width: 95%;
+  height: 100%;
     border-radius: 8px;
   }
  
@@ -1203,8 +1201,8 @@ width: 100%;
   }
 
       .background-image{
-    width: 950px;
-  height: 1300px;
+    width:96%;
+  height: 100%;
     border-radius: 8px;
   }
 .content-container {
@@ -1214,6 +1212,19 @@ width: 100%;
 .summer {
   margin-top: -20%;
 }
+ .deliveries h1{
+width: 70%;
+}
+
+.backgroundimage2 {
+  width: 50%;
+  height: 680px;
+}
+.firstframe {
+ left: 13%;
+  top: 150%;
+
+}
 
 }
 
@@ -1221,14 +1232,20 @@ width: 100%;
   .menu-button{
     gap: 450px;
   }
+
     
+        .background-image{
+    width: 96%;
+  height: 100%;
+    border-radius: 8px;
+  }
     
 .content-container {
   height: 55%;
 }
 
 .summer {
-  margin-top: -20%;
+  margin-top: 3%;
 }
   .welcome-text {
   font-size: 42px;
@@ -1266,7 +1283,7 @@ width: 100%;
 .welcometext2 {
   font-size: 32px;
   font-weight: 600;
-  padding-top: 20%;
+  padding-top: 23%;
   width: 80%;
 }
 
@@ -1275,6 +1292,9 @@ width: 100%;
   top:200px;
   left: -80%;
 }
+.deliveries img{
+width: 300px;
+}
 }
 
 
@@ -1282,9 +1302,11 @@ width: 100%;
   .menu-button{
     gap: 450px;
   }
-     .background-image{
-    width: 95%;
-  height: 630px;
+    
+        .background-image{
+    width: 96%;
+  height: 100%;
+    border-radius: 8px;
   }
     
 .content-container {
