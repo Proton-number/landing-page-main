@@ -751,7 +751,7 @@ body {
 
 .john {
   align-items: center;
-  margin-left: 2%;
+  margin-left: 20px;
   position: relative;
 }
 
@@ -1026,21 +1026,30 @@ margin: auto;
     gap: 220px;
   }
    .background-image{
-    width: 350px;
-  height: 200%;
-    border-radius: 12px;
+  display: none;
+  }
+  .mobileBackground{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .mobileBackgroundImg{
+    height: auto;
+    width: 90%;
   }
   
 .content-container {
-  height: 38%;
+  height: 58%;
+  position: absolute;
 }
 
 .summer {
-  margin-top: -30%;
+  margin-top: -10%;
 }
   .welcome-text {
-  font-size: 30px;
-  margin-top: -50%;
+  font-size: 28px;
+  margin-top: -10%;
 }
 .sport {
   width: 100%;
@@ -1053,7 +1062,6 @@ margin: auto;
 .backgroundimage2 {
   width: 216px;
   height: 690px;
-   margin-left: 0%;
 }
 .backwood {
   width: 226px;
@@ -1081,7 +1089,7 @@ width: 226px;
   font-size: 13px;
 }
 .welcometext {
-  padding-top: 138%;
+  padding-top: 88%;
 }
 .secondframe {
   top: 18%;
@@ -1190,7 +1198,11 @@ width: 100px;
     border-radius: 8px;
   }
  
-
+.backgroundimage2 {
+  width: 100%;
+  height: 684px;
+  margin: auto;
+}
 }
 
 
@@ -1207,7 +1219,9 @@ width: 100px;
   }
 .content-container {
   height: 48%;
+  left: 20px;
 }
+
 
 .summer {
   margin-top: -20%;
@@ -1218,7 +1232,8 @@ width: 70%;
 
 .backgroundimage2 {
   width: 50%;
-  height: 680px;
+  height: 684px;
+  margin: auto;
 }
 .firstframe {
  left: 13%;
@@ -1226,13 +1241,28 @@ width: 70%;
 
 }
 
+        .background-image{
+    width: 70%;
+  height: 100%;
+    border-radius: 8px;
+  }
+
 }
 
 @media (min-width: 600px) {
   .menu-button{
-    gap: 450px;
+    gap: 580px;
   }
 
+  .mobileBackground{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .mobileBackgroundImg{
+    height: auto;
+    width: 96%;
+  }
     
         .background-image{
     width: 96%;
@@ -1242,7 +1272,10 @@ width: 70%;
     
 .content-container {
   height: 55%;
+  left: 20px;
 }
+
+
 
 .summer {
   margin-top: 3%;
@@ -1253,8 +1286,9 @@ width: 70%;
 }
 /* categories */
 .backgroundimage2 {
-  width: 50%;
-  height: 680px;
+  width: 100%;
+  height: 684px;
+  margin: auto;
 }
 .backwood {
   width: 100%;
@@ -1307,6 +1341,14 @@ width: 300px;
     width: 96%;
   height: 100%;
     border-radius: 8px;
+    display: block;
+
+  }
+
+   
+  .mobileBackground{
+  display: none;
+
   }
     
 .content-container {
